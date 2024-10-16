@@ -12,7 +12,6 @@
     display: flex;
     width: 100%;
     height: calc(100vh - 80px);
-
     /* debug */
     background-color: lightcoral;
 }
@@ -22,8 +21,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 100vh;
+    overflow-y: auto;
 
 
     /* debug */
@@ -31,12 +30,14 @@
 }
 
 .sidebar-col {
+    z-index: 999;
     width: calc(100% - 440px);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .sidebar-items-start, .sidebar-items-end {
@@ -55,18 +56,21 @@
 
 
 .header {
+    width: calc(100% - 440px);
     display: flex;
     justify-content: flex-end;
     align-items: center;    
     width: 100%;
     height: 80px;
+    position: fixed;
+    z-index: 1;
+    object-fit: cover;
 
     /* debug */
     background-color: black;
 }
 
 .button {
-    width: 40%;
     padding: 10px 40px;
     border: 1px solid white;
     border-radius: 30px;
@@ -79,6 +83,10 @@ a.button {
 }
 
 .content {
+    width: 100%;
+}
+
+.container {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +96,6 @@ a.button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
     
 }
 
@@ -98,7 +105,6 @@ a.button {
     justify-content: center;
     align-items: center;
     width: calc(100% / 4);
-    padding: 15px 10px;
 }
 
 .text-gray {
@@ -106,7 +112,6 @@ a.button {
 }
 
 .grid {
-    margin-top: 10px;
     display: grid;
     gap: 10px;
     row-gap: 10px;
@@ -124,6 +129,7 @@ a.button {
 }
 
 .footer {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
