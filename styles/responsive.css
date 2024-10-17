@@ -12,6 +12,7 @@
 
     .sidebar-items-start, .sidebar-items-end {
         margin: 20px 20px;
+        width: 90%;
     }
     .list {
         margin-left: 20px;
@@ -22,7 +23,11 @@
     }
 
     .hidden-xs {
-        display: inline ;
+        display: flex ;
+    }
+    .hidden-xs-2 {
+        display:inline-block ;
+
     }
 
     .hidden-xs img {
