@@ -25,7 +25,7 @@
     overflow-y: auto;
     margin-left: 60px;
     /* debug */
-    background-color: aqua;
+    background-color: #141922;
 }
 
 .sidebar-col {
@@ -39,7 +39,7 @@
     position: fixed;
 
     /* debug */
-    background-color: lightcoral;
+    background-color: #000000;
 
 }
 
@@ -47,12 +47,16 @@
     color: #d2d2d2;
 }
 
+.sidebar-item:nth-child(1) i {
+    color: #FFFF;
+}
+
 .sidebar-items-start, .sidebar-items-end {
     
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px 10px;
+    margin: 10px 10px;
     gap: 10px;
 }
 
@@ -80,7 +84,7 @@
     position: fixed;
     
     /* debug */
-    background-color: black;
+    background-color: #080B12;
 }
 
 .button {
@@ -118,7 +122,7 @@ a.button {
 
 
 .list {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -169,5 +173,5 @@ a.button {
     width: 100%;
 
     /* debug */
-    background-color: lightgreen;
+    background-color: #282828;
 }

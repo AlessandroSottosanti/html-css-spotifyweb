@@ -1,17 +1,24 @@
 /* S */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 520px) {
     .sidebar-col {
-        width: 200px;
+        width: 230px;
     }
 
     .container-col {
-        margin-left: 200px;
+        margin-left: 230px;
 
     }
 
+    .sidebar-items-start, .sidebar-items-end {
+        margin: 20px 20px;
+    }
+    .list {
+        margin-left: 20px;
+    }
+
     .header {
-        width: calc(100% - 200px);
+        width: calc(100% - 230px);
     }
 
     .hidden-xs {
@@ -34,8 +41,7 @@
     }
 
     .playlist {
-        width: 60%;   
-        
+        font-size: 16px;        
     }
 
     .hidden-s {
@@ -45,8 +51,32 @@
 
 /* MEDIUM */
 
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 720px) {
     .grid {
         grid-template-columns: repeat(4, 1fr);
     }
+    
+    .list li {
+        width: calc(100% / 5);
+
+    }
 }
+
+
+@media screen and (min-width: 1080px) {
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .list {
+        width: 80%;
+    }
+    
+    .list li {
+        width: calc(100% / 6);
+    }
+}
+
+
+
+/* TODO: USA DISPLAY FLEX AL POSTO DI GRID E DIVIDI IL 100% WIDTH DEGLI ELEMENTI PER IL NUMERO DI ELEMENTI CHE VUOI PER RIGA */
