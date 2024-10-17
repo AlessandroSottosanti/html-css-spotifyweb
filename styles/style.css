@@ -450,6 +450,20 @@ a.button {
     gap: 20px;
 }
 
+.buttons i {
+    font-size: 24px; 
+    color: #7F8286; 
+    transition: transform 0.1s ease, color 0.1s ease; 
+}
+
+.buttons i:hover {
+    color: white; 
+}
+
+.buttons .fa-circle-play:hover {
+    transform: scale(1.2); 
+}
+
 .player {
     display: flex;
     align-items: center;
