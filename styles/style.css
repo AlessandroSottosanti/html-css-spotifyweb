@@ -71,6 +71,7 @@
 }
 
 .header {
+    width: calc(100% - 440px);
     display: flex;
     justify-content: flex-end;
     align-items: center;    
@@ -121,7 +122,6 @@ a.button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
     
 }
 
@@ -140,7 +140,6 @@ a.button {
 }
 
 .grid {
-    margin-top: 10px;
     display: grid;
     gap: 10px;
     row-gap: 10px;
@@ -161,6 +160,7 @@ a.button {
 
 
 .footer {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
