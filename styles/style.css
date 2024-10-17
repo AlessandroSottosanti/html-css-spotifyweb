@@ -68,6 +68,32 @@
     font-size: 1.5rem;
     z-index: 999;
 }
+
+
+.sidebar-item:hover {
+    color: white; 
+    cursor: pointer;
+}
+
+
+.sidebar-item:hover span {
+    color: white;
+}
+
+.sidebar-item:hover div span {
+    background-color: white;
+}
+
+.sidebar-item:hover i {
+    color: white;
+}
+
+
+.sidebar-item:hover img {
+    filter: brightness(0) invert(1);
+}
+
+
 .sidebar-item:nth-child(2) + .sidebar-item::before {
     content: "";
     position: absolute;
@@ -95,23 +121,32 @@
     width: calc(100% - 60px);
     height: 80px;
     position: fixed;
-    
-    /* debug */
+    z-index: 1000;
     background-color: #080B12;
+}
+.btn-container {
+    margin: 0 20px;
 }
 
 .button {
-    width: 40%;
-    width: 40%;
+    display: inline-block;
+    width: 100%;
     padding: 10px 40px;
     border: 1px solid white;
     border-radius: 30px;
-    margin: 20px 10px;
     font-size: small;
+    transition: transform 0.3s ease;
+    text-align: center; 
+    white-space: nowrap;
 }
 
 a.button {
     color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
 
 .content {
@@ -166,6 +201,11 @@ a.button {
     padding: 15px 10px;
     padding: 15px 10px;
     gap: 20px;
+}
+
+.list li:hover {
+    color: white; 
+    cursor: pointer;
 }
 
 .text-gray {
@@ -263,7 +303,7 @@ a.button {
     border-radius: 50%;
 }
 
-.card img {
+.card .cover img {
     width: 100%;
 }
 
@@ -279,6 +319,33 @@ a.button {
 .card .caption p {
     width: 100%;
     color: #7F8286;
+}
+.cover {
+    position: relative;
+    display: flex;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease
+}
+
+.overlay .fa-circle-play {
+    font-size: 2rem;
+}
+
+.card:hover .overlay {
+    opacity: 1;
 }
 
 .footer {
@@ -343,6 +410,11 @@ a.button {
     color: #7F8286;
 }
 
+.img-container .caption:hover span {
+    width: 100%;
+    color: white;
+}
+
 .icons {
     display: flex;
     height: 100%;
@@ -350,6 +422,18 @@ a.button {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 5px;
+}
+
+.icons  i{
+
+    color: #7F8286;
+
+}
+
+.icons  i:hover{
+
+    color: white;
+
 }
 
 /* Colonna centrale */
@@ -384,6 +468,15 @@ a.button {
     color: #b3b3b3;
 }
 
+.song-info i{
+    color: #7F8286;
+}
+
+
+.song-info i:hover{
+    color: white;
+}
+
 .current-time, .total-time {
     font-size: 12px;
     margin: 0 10px;
@@ -395,13 +488,14 @@ a.button {
     height: 4px;
     background-color: #535353;
     border-radius: 5px;
+    min-width: 50px;
 }
 
 .progress-bar {
     position: absolute;
     -webkit-appearance: none;
     appearance: none;
-    width: 10%;
+    width: 30%;
     height: 4px;
     left: 0;
     top: 0;
@@ -413,13 +507,32 @@ a.button {
 .progress-bar::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 0;
-    height: 0;
+    width: 12px; 
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
 }
 
 .progress-bar::-moz-range-thumb {
-    width: 0;
-    height: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.hover-volume:hover .progress-bar {
+    background-color: #1db954; 
+}
+
+.hover-volume:hover .progress-bar::-webkit-slider-thumb,
+.hover-volume:hover .progress-bar::-moz-range-thumb {
+    opacity: 1; 
 }
 
 .progress-bar-container::before {
@@ -436,7 +549,7 @@ a.button {
 
 /* Colonna destra */
 .col-right {
-    flex-grow: 1;
+    flex-grow: 2;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -453,6 +566,7 @@ a.button {
 }
 
 .list-volume {
+    justify-content: space-between;
     display: flex;
     align-items: center;
     flex-direction: row;

@@ -101,12 +101,10 @@
             </ul>
         </div>
 
-
-        <!-- BODY -->
         <!-- BODY -->
         <div class="container-col">
             <header class="header">
-                <div><a href="#" class="button">EFFETTUA L'UPGRADE</a></div>
+                <div class="btn-container"><a href="#" class="button">EFFETTUA L'UPGRADE</a></div>
             </header>
 
 
@@ -133,7 +131,11 @@
 
                 <div class="grid">
                     <div class="card">
-                        <img src="./img/metal_lifting.jpg" alt="">
+                        <div class="cover">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                        </div>
+                        
                         <div class="caption">
                             <h3>Heavy Metal</h3>
                             <p>Subtitle</p>
@@ -141,7 +143,10 @@
                     </div>
 
                     <div class="card">
-                        <img src="./img/stranger.jpeg" alt="">
+                        <div class="cover">
+                            <img src="./img/stranger.jpeg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                        </div>
                         <div class="caption">
                             <h3>Strangerthings vol.1 (a Netflix Original Series Soundtrack)</h3>
                             <p>Kyle Dixon & Micheal Stein</p>
@@ -149,7 +154,10 @@
                     </div>
 
                     <div class="card">
-                        <img src="./img/aquietplace.jpeg" alt="">
+                        <div class="cover">
+                            <img src="./img/aquietplace.jpeg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                        </div>
                         <div class="caption">
                             <h3>A Quiet place</h3>
                             <p>Subtitle</p>
@@ -157,7 +165,11 @@
                     </div>
 
                     <div class="card">
-                        <img src="./img/split.jpeg" alt="">
+                        <div class="cover">
+                            <img src="./img/split.jpeg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                        </div>
+
                         <div class="caption">
                             <h3>Split</h3>
                             <p>Subtitle</p>
@@ -165,7 +177,10 @@
                     </div>
 
                     <div class="card">
-                        <img src="./img/cure.jpeg" alt="">
+                        <div class="cover">
+                            <img src="./img/cure.jpeg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                        </div>
                         <div class="caption">
                             <h3>A cure for wellness</h3>
                             <p>Subtitle</p>
@@ -173,7 +188,10 @@
                     </div>
 
                     <div class="card">
-                        <img src="./img/sinister.jpeg" alt="">
+                        <div class="cover">
+                            <img src="./img/sinister.jpeg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                        </div>
                         <div class="caption">
                             <h3>Sinister</h3>
                             <p>Subtitle</p>
@@ -198,7 +216,10 @@
                 <div class="grid">
 
                     <div class="card">
-                        <img src="./img/radar.jpeg" alt="">
+                        <div class="cover">
+                            <img src="./img/radar.jpeg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                        </div>
                         <div class="caption">
                             <h3>Release Radar</h3>
                             <p>la vita bella</p>
@@ -206,7 +227,10 @@
                     </div>
 
                     <div class="card">
-                        <img src="./img/mixdaily.jpeg" alt="">
+                        <div class="cover">
+                            <img src="./img/mixdaily.jpeg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                        </div>
                         <div class="caption">
                             <h3>Daily mix 3</h3>
                             <p>la vita bella</p>
@@ -228,7 +252,10 @@
                 <div class="grid">
 
                     <div class="card">
-                        <img class="rounded" src="./img/youg.jpeg" alt="">
+                        <div class="cover">
+                            <img class="rounded" src="./img/youg.jpeg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                        </div>
                         <div class="caption">
                             <h3>Lana del Rey</h3>
                             <p>la vita bella</p>
@@ -236,7 +263,10 @@
                     </div>
 
                     <div class="card">
-                        <img class="rounded" src="./img/einaudi.jpeg" alt="">
+                        <div class="cover">
+                            <img class="rounded" src="./img/einaudi.jpeg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-circle-play"></i></div>
+                        </div>
                         <div class="caption">
                             <h3>Ludovico Einaudi</h3>
                             <p>la vita bella</p>
@@ -281,11 +311,11 @@
                 </div>
 
                 <div class="player">
-                    <div class="song-info">
+                    <div class="song-info hover-volume">
                         <span class="current-time">0:25</span>
 
                         <div class="progress-bar-container">
-                            <input type="range" class="progress-bar">
+                            <input type="range" class="progress-bar" min="0" max="100" value="25">
                         </div>
 
                         <span class="total-time">4:35</span>
@@ -305,8 +335,8 @@
 
 
                                 <i class="fa-solid fa-volume-high"></i>
-                                <div class="progress-bar-container">
-                                    <input type="range" class="progress-bar">
+                                <div class="progress-bar-container  hover-volume">
+                                    <input type="range" class="progress-bar" min="0" max="100" value="25">
                                 </div>
 
                             </div>
