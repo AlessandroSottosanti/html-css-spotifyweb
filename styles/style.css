@@ -483,7 +483,7 @@ a.button {
 .song-info {
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 100%;
     color: #b3b3b3;
 }
 
@@ -503,18 +503,18 @@ a.button {
 
 .progress-bar-container {
     position: relative;
+    display: flex;
     width: 100%;
     height: 4px;
     background-color: #535353;
     border-radius: 5px;
-    min-width: 50px;
 }
 
 .progress-bar {
     position: absolute;
     -webkit-appearance: none;
     appearance: none;
-    width: 30%;
+    width: auto;
     height: 4px;
     left: 0;
     top: 0;
@@ -549,9 +549,12 @@ a.button {
     background-color: #1db954; 
 }
 
-.progress-bar-container:hover .progress-bar::-webkit-slider-thumb,
 .progress-bar-container:hover .progress-bar::-moz-range-thumb {
     opacity: 1; 
+}
+
+.progress-bar-container:hover .progress-bar::-webkit-slider-thumb {
+    opacity: 1;
 }
 
 .progress-bar-container::before {
@@ -596,4 +599,41 @@ a.button {
 
 .song-info i {
     margin-right: 10px;
+}
+
+.col-right .progress-bar-container {
+    width: 80px;
+    height: 4px;
+    background-color: #535353;
+    border-radius: 5px;
+    margin-left: 10px; 
+}
+
+
+.col-right .progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.col-right .progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+.col-right .progress-bar::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
 }
