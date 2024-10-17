@@ -1,0 +1,52 @@
+/* S */
+
+@media screen and (min-width: 500px) {
+    .sidebar-col {
+        width: 200px;
+    }
+
+    .container-col {
+        margin-left: 200px;
+
+    }
+
+    .header {
+        width: calc(100% - 200px);
+    }
+
+    .hidden-xs {
+        display: inline ;
+    }
+
+    .hidden-xs img {
+        width: 80%;
+    }
+
+    .sidebar-item span {
+        font-size: medium;
+        color: #7F8286;
+
+    }
+
+
+    .sidebar-item:nth-child(3) span {
+        color: #d2d2d2;
+    }
+
+    .playlist {
+        width: 60%;   
+        
+    }
+
+    .hidden-s {
+        display: none;
+    }
+}
+
+/* MEDIUM */
+
+@media screen and (min-width: 670px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

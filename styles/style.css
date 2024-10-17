@@ -13,30 +13,38 @@
     width: 100%;
     height: calc(100vh - 80px);
 
-    /* debug */
-    background-color: lightcoral;
 }
 
 .container-col {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-
+    overflow-y: auto;
+    margin-left: 60px;
     /* debug */
     background-color: aqua;
 }
 
 .sidebar-col {
-    width: calc(100% - 440px);
-    height: 100%;
+    width: 60px;
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 9999;
+    position: fixed;
+
+    /* debug */
+    background-color: lightcoral;
+
+}
+
+.sidebar-item:nth-child(3) i {
+    color: #d2d2d2;
 }
 
 .sidebar-items-start, .sidebar-items-end {
@@ -53,14 +61,23 @@
     z-index: 999;
 }
 
+.sidebar-item i {
+    color: #7F8286;
+
+}
+
+.hidden-xs{
+    display: none;
+}
 
 .header {
     display: flex;
     justify-content: flex-end;
     align-items: center;    
-    width: 100%;
+    width: calc(100% - 60px);
     height: 80px;
-
+    position: fixed;
+    
     /* debug */
     background-color: black;
 }
@@ -79,16 +96,30 @@ a.button {
 }
 
 .content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    justify-content: center;
+    
+}
+
+.start {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title {
+    margin: 20px 0 0 20px;
+}
+
+
+.list {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-}
-
-.list {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
     
 }
 
@@ -106,22 +137,24 @@ a.button {
 }
 
 .grid {
-    margin-top: 10px;
     display: grid;
     gap: 10px;
     row-gap: 10px;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+
 }
+
 
 .card {
     text-align: center;
-
-    /* debug */
-    background-color: blueviolet;
-    padding: 80px;
+    background-image: url(../img/mixdaily.jpeg);
+    background-size: cover;
+    aspect-ratio: 1 / 1;
 
 }
+
 
 .footer {
     display: flex;
