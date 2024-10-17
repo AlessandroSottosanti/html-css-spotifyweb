@@ -273,7 +273,7 @@ a.button {
     width: 95%;
     height: 60%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -283,7 +283,7 @@ a.button {
     flex-grow: 1; 
     display: flex;
     align-items: center;
-    /* debug */
+    max-width: 200px;
 }
 
 .img-container {
@@ -327,7 +327,7 @@ a.button {
 /* Colonna centrale */
 .col-center {
     flex-grow: 3;
-
+    min-width: 300px;
 }
 
 .buttons {
@@ -413,6 +413,7 @@ a.button {
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    max-width: 200px;
 }
 
 .volume {
