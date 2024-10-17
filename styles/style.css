@@ -146,17 +146,19 @@ a.button {
 }
 
 .grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     row-gap: 10px;
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
     margin: 20px;
+    width: 100%;
 
 }
 
 
 .card {
+    width: calc(90% / 2);
     text-align: center;
     background-image: url(../img/mixdaily.jpeg);
     background-size: cover;
