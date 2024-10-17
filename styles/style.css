@@ -61,11 +61,21 @@
 }
 
 .sidebar-item {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 1.5rem;
     z-index: 999;
+}
+.sidebar-item:nth-child(2) + .sidebar-item::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #1db954;
 }
 
 .sidebar-item i {
@@ -190,6 +200,24 @@ a.button {
 
 .border {
     width: 100%;
+}
+
+.list li:first-child {
+    position: relative; 
+}
+
+.list li:first-child::after {
+    content: "";
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 2px;
+    background-color: #1db954; 
+    position: absolute;
+    bottom: 0px; 
+    left: 0;
+    transform: translateX(120%);
 }
 
 .square {
