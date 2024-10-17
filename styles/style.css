@@ -116,10 +116,24 @@ a.button {
     justify-content: flex-start;
 }
 
-.title {
-    margin: 20px 0 0 20px;
+.titles {
+    width: 40%;
 }
 
+.titles p{
+    color: #7F8286;
+}
+
+.title {
+    margin: 20px 0 0 20px;
+    width: 100%;
+
+}
+
+.subtitle {
+    margin: 10px 0 10px 20px;
+    width: 100%;
+}
 
 .list {
     width: 100%;
@@ -148,8 +162,8 @@ a.button {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    row-gap: 10px;
+    gap: calc(10% / 2);
+    row-gap: 20px;
     width: 100%;
     margin: 20px;
     width: 100%;
@@ -160,19 +174,35 @@ a.button {
 .card {
     width: calc(90% / 2);
     text-align: center;
-    background-image: url(../img/mixdaily.jpeg);
-    background-size: cover;
+    object-fit: cover;
     aspect-ratio: 1 / 1;
-
+    justify-content: center;
 }
 
+.card img {
+    width: 100%;
+}
+
+.card .caption {
+    margin-top: 20px;
+}
+
+.card .caption h3 {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.card .caption p {
+    width: 100%;
+    color: #7F8286;
+}
 
 .footer {
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    z-index: 999;
+    z-index: 9999;
     height: 80px;
     width: 100%;
 
