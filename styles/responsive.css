@@ -94,4 +94,9 @@
 
 
 
-/* TODO: USA DISPLAY FLEX AL POSTO DI GRID E DIVIDI IL 100% WIDTH DEGLI ELEMENTI PER IL NUMERO DI ELEMENTI CHE VUOI PER RIGA */
+@media screen and (max-height: 350px) {
+
+    .library {
+        padding-bottom: 100px;
+    }
+}

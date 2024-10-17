@@ -315,13 +315,95 @@ a.button {
     color: #7F8286;
 }
 
+.icons {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 5px;
+}
+
 /* Colonna centrale */
 .col-center {
     flex-grow: 3;
 
-    /* debug */
-    background-color: #e0e0e0;
 }
+
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #b3b3b3;
+}
+
+.current-time, .total-time {
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.progress-bar-container {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #535353;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 10px;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+.progress-bar::-moz-range-thumb {
+    width: 0;
+    height: 0;
+}
+
+.progress-bar-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    width: 0;
+    z-index: 0;
+}
+
 
 /* Colonna destra */
 .col-right {
@@ -330,3 +412,4 @@ a.button {
     /* debug */
     background-color: #f0f0f0;
 }
+

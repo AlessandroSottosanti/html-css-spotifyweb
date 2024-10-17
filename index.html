@@ -40,9 +40,9 @@
                     <img src="./img/search.svg" alt="">
                     <span class="hidden-xs">Cerca</span>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item library">
                     <img src="./img/libreria.svg" alt="">
-                    <span class="hidden-xs">La tua libreria</span>
+                    <span class="hidden-xs ">La tua libreria</span>
                 </li>
 
                 <li class="sidebar-item hidden-xs">
@@ -307,23 +307,43 @@
                     </span>
                 </div>
                 <div class="icons">
-
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
 
             <div class="col-center">
-                <div class="buttons"></div>
-                <div class="timeline"></div>
+
+                <div class="buttons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+
+                <div class="player">
+                    <div class="song-info">
+                        <span class="current-time">0:25</span>
+
+                        <div class="progress-bar-container">
+                            <input type="range" class="progress-bar" min="0" max="100" value="25">
+                        </div>
+                        
+                        <span class="total-time">4:35</span>
+                    </div>
+                </div>
+                
             </div>
 
             <div class="col-right">
                 <div class="volume">
-                    <ul>
-                        <li class="list-volume"></li>
-                        <li class="list-volume"></li>
-                        <li class="list-volume"></li>
-                        <li class="list-volume"></li>
-                        <li class="list-volume"></li>
+                    <ul class="list-volume">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
