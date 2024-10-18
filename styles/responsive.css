@@ -1,6 +1,107 @@
+    /* XS */
+@media screen and (max-width: 652px) {
+    
+/* FOOTER */
+
+    /* Colonna sinistra */
+    .col-left {
+        flex-grow: 1;
+        max-width: 150px; 
+    }
+
+    .img-container {
+        max-width: 150px; 
+    }
+
+    .img-container img {
+        width: 25%;
+        height: 25%;
+    }
+
+    .img-container .caption {
+        margin-left: 5px; 
+    }
+
+    .img-container .caption h4 {
+        font-size: 14px; 
+    }
+
+    .img-container .caption span {
+        font-size: 12px; 
+    }
+
+    .icons {
+        row-gap: 3px; 
+    }
+
+    .icons i {
+        font-size: 18px; 
+    }
+
+    /* Colonna centrale */
+    .col-center {
+        min-width: 200px; 
+    }
+
+    .buttons {
+        gap: 10px; 
+    }
+
+    .buttons i {
+        font-size: 20px; 
+    }
+
+    .player {
+        padding: 5px; 
+    }
+
+    .song-info {
+        font-size: 10px; 
+    }
+
+    .current-time, .total-time {
+        font-size: 10px;
+    }
+
+    .progress-bar-container {
+        height: 3px;
+    }
+
+    .progress-bar {
+        height: 3px;
+    }
+
+    .progress-bar::-webkit-slider-thumb, 
+    .progress-bar::-moz-range-thumb {
+        width: 8px;
+        height: 8px;
+    }
+
+    /* Colonna destra */
+    .col-right {
+        max-width: 150px; 
+    }
+
+    .col-right .progress-bar-container {
+        width: 60px; 
+        height: 3px; 
+    }
+
+    .col-right .progress-bar {
+        height: 3px; 
+    }
+
+    .col-right .progress-bar::-webkit-slider-thumb,
+    .col-right .progress-bar::-moz-range-thumb {
+        width: 8px; 
+        height: 8px;
+    }
+}
+
+
 /* S */
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 652px) {
     .sidebar-col {
         width: 230px;
     }
